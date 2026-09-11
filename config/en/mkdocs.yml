@@ -1,0 +1,74 @@
+# See: https://squidfunk.github.io/mkdocs-material/creating-your-site/#configuration
+# See: https://www.mkdocs.org/user-guide/configuration/
+
+site_name: National Risk Watch User Manual
+site_url: https://manual.nationalriskwatch.org/
+docs_dir: "../../docs/en"
+site_dir: "../../www/en"
+
+markdown_extensions:
+  - attr_list
+  - def_list
+  - md_in_html
+  - toc:
+      toc_depth: "1-1"
+      permalink: true
+      permalink_title: Specific link to this section
+  - admonition
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.details
+  - pymdownx.snippets:
+      base_path: [".", "../../"]
+      check_paths: true
+  - pymdownx.superfences
+  - pymdownx.betterem
+
+plugins:
+  - privacy:
+      assets: false
+  - search
+  - glightbox
+
+theme:
+  name: material
+  language: en
+  palette:
+    primary: custom
+    accent: custom
+  font: false # To comply with GDPR
+  features:
+    # No navigation.tabs: all sections live in the left sidebar, not a top bar
+    - navigation.top
+    - navigation.instant
+    - navigation.instant.progress
+
+extra:
+  generator: false
+
+nav:
+  - "Home": "index.md"
+  - "Introduction to National Risk Watch":
+      - "Welcome and Positioning": "introduction/positioning.md"
+      - "From Early Warning to Early Action": "introduction/early-warning-early-action.md"
+      - "Impact Based Forecasting Explained": "introduction/impact-based-forecasting.md"
+      - "What National Risk Watch Is and Is Not": "introduction/what-nrw-is-and-is-not.md"
+  - "Navigating the Platform":
+      - "Screen Overview": "platform/screen-overview.md"
+      - "Map Navigation": "platform/map-navigation.md"
+      - "Events Panel and Layers": "platform/event-panel-and-layers.md"
+      - "Understanding the Legend": "platform/legend.md"
+      - "Exporting Data": "platform/exporting.md"
+      - "Logging In": "platform/logging-in.md"
+  - "Hazard Guides":
+      - "Floods":
+          - "Flood Layers Explained": "hazards/floods/layers.md"
+          - "Data Sources": "hazards/floods/data-sources.md"
+          - "Reading the Discharge Graph": "hazards/floods/discharge-graph.md"
+          - "Event Dates and Statuses": "hazards/floods/dates-and-statuses.md"
+          - "Limitations and Feedback": "hazards/floods/limitations.md"
+  - "About This Release":
+      - "What Is Not Yet Available": "release/not-yet-available.md"
+      - "Coming from the IBF Portal": "release/coming-from-ibf.md"
+  - "Glossary": "glossary.md"

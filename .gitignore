@@ -1,0 +1,13 @@
+# Build output
+www/
+
+# Local environments
+venv/
+__pycache__/
+
+# macOS
+.DS_Store
+
+# Internal review notes: names user test participants and open DevOps items.
+# The GitHub repo is public. Remove this line only after deciding it can be public.
+REVIEW-NOTES.md

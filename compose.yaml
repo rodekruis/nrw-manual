@@ -1,0 +1,17 @@
+services:
+  # Live preview at http://localhost:8000, reloads on save
+  manual:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/docs
+
+  # One off static build into www/en, run with: docker compose run --rm build
+  build:
+    build: .
+    volumes:
+      - .:/docs
+    command: ["build", "--config-file", "config/en/mkdocs.yml"]
+    profiles:
+      - tools
