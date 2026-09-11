@@ -48,6 +48,28 @@ Sections: introduction and positioning, navigating the platform, hazard guides, 
   mkdocs serve --config-file config/en/mkdocs.yml --dev-addr localhost:8000
   ```
 
+### With conda
+
+Create and activate a conda environment, then install the Python dependencies:
+
+```sh
+conda create --name nrw-manual python=3.12
+conda activate nrw-manual
+pip install -r requirements.txt
+```
+
+Serve the documentation, preview at <http://localhost:8000>:
+
+```sh
+mkdocs serve --config-file config/en/mkdocs.yml --dev-addr localhost:8000
+```
+
+When you are finished, deactivate the environment with:
+
+```sh
+conda deactivate
+```
+
 #### With Docker
 
 No Python setup needed. Serve at <http://localhost:8000>:
