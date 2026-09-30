@@ -21,8 +21,8 @@ Every event card has a **Data sources** section. Open it to see exactly which da
 
 1. GloFAS gives 51 discharge forecasts per day per station, out to 7 days.
 2. Each forecast is compared with the return period thresholds for that location, which produces the severity and the probability behind the alert level. See [Reading the discharge graph](./discharge-graph.md).
-3. If the event reaches the trigger return period, the flood depth map for that return period is clipped to the affected admin areas.
-4. WorldPop counts are clipped to the area where flood depth reaches at least 10 cm. What remains is the **exposed population**, totaled per admin area.
+3. If the event reaches the trigger return period, the flood depth map for that return period is overlaid on the affected admin areas.
+4. WorldPop counts are overlaid on the area where flood depth reaches at least 10 cm. What remains is the **exposed population**, totaled per admin area.
 
 !!! Note "Why the exposed population figure can look coarse"
     It is a 100 m population grid intersected with a modeled flood depth grid. It is strong enough to tell you where to concentrate attention and roughly how large a response might need to be. It is not a count of individuals and not a beneficiary list.

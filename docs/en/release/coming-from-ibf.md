@@ -6,9 +6,6 @@ hide:
 
 If you used the IBF Portal, most of what you know still applies. This page maps the differences so you are not looking for things where they used to be.
 
-!!! Note "Added to the agreed outline"
-    This page was not in the original outline. It is included because the pre-release audience is existing IBF users. Remove it if you would rather keep the release section to one page.
-
 ### What stays the same
 
 - The platform still shows impact based forecasts: hazard, exposed population, admin areas, thresholds

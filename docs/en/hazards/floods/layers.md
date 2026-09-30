@@ -10,9 +10,9 @@ Floods are the only hazard in this pre-release. This page describes the map laye
 
 | Layer | What you see | What it means | Where it comes from |
 | :--- | :--- | :--- | :--- |
-| **Exposed population** | Admin areas shaded from pale to dark red | The estimated number of people standing in water at least 10 cm deep, per admin area. Classes recalibrate per view, see [Understanding the legend](../../platform/legend.md). | Flood depth combined with population counts |
+| **Exposed population** | Admin areas shaded from pale to dark in the color of the alert level | The estimated number of people standing in water at least 10 cm deep, per admin area. Classes recalibrate per view, see [Understanding the legend](../../platform/legend.md). | Flood depth combined with population counts |
 | **Flood depth** | Blue shading over the map, darker where deeper | How deep the water is expected to be at the peak of the event. The edge of the blue area is the area the flood is forecast to reach | A global flood hazard map, per return period |
-| **River discharge station** | A point marker on the river | The GloFAS station whose forecast drives this event | GloFAS, see [Data sources](./data-sources.md) |
+| **River discharge station** | A point marker on the river | The GloFAS station whose forecast this event is based on | GloFAS, see [Data sources](./data-sources.md) |
 
 ![Flood depth and exposed population on the map](../../assets/img/FloodLayers.png)
 
@@ -30,7 +30,7 @@ The layer is tied to a specific return period. A 5 year flood depth map covers a
 
 ### Low and medium events have no flood depth layer
 
-For events at low or medium alert level, **no flood depth layer is shown and no exposed population is calculated**. This is not a display problem. Flood depth is only produced for events that reach the trigger return period configured for your country, because that is the severity the available hazard maps cover.
+For events at low or medium alert level, **no flood depth layer is shown**. This is not a display problem. Flood depth is only produced for events that reach the trigger return period configured for your country, because that is the severity the available hazard maps cover.
 
 For a low or medium event you still get the event itself, its alert level, its dates, the river discharge forecast graph with its return period lines, and the probability behind it. You do not get a map of where the water will be or a count of who is exposed.
 

@@ -19,7 +19,7 @@ The legend explains the event markers.
 The legend switches to explain the shading.
 
 - **Flood depth:** a blue gradient from shallow to deep, used by the flood depth layer
-- **Exposed population:** five classes from minimal to critical, used to shade admin areas
+- **Exposed population:** five classes from minimal to critical in the color of the alert level, used to shade admin areas
 
 ![Legend in the event view](../assets/img/LegendExposure.png)
 
@@ -28,7 +28,7 @@ The legend switches to explain the shading.
 This is the part most people miss. The five exposed population classes are **not fixed thresholds**. They are calculated from the range of values in the view you are currently looking at.
 
 - At national level, the darkest class is the most exposed admin area in the country for that event
-- After you drill into a district, the classes recalculate against the areas inside that district
+- After you zoom in on a district, the classes recalculate against the areas inside that district
 
 The practical consequence: **the same shade of red means different numbers at different levels.** A dark area inside a district is the most exposed area in that district, not necessarily a nationally severe number. Always read the figure in the exposed areas table next to the color.
 
