@@ -12,6 +12,6 @@ services:
     build: .
     volumes:
       - .:/docs
-    command: ["build", "--config-file", "config/en/mkdocs.yml"]
+    command: ["build"]
     profiles:
       - tools
