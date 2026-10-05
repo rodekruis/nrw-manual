@@ -109,11 +109,11 @@ Screenshots live in `docs/en/assets/img/` and are captured from the demo prototy
 - Terminology in the text is from an earlier Malawi mock and does not yet match the screenshots: pages say districts and TAs where the app shows zones and woredas, and call the gauge a GloFAS station where the app labels it River gauge
 - Alert level pages describe low, medium and high; the app legend currently shows low and high only
 - `platform/exporting.md` and `platform/logging-in.md` describe intent, since neither feature exists yet
-- Theme assets are missing: no logo or favicon, so the site renders in stock Material blue rather than Red Cross red and navy
+- Theme assets are missing: no logo or favicon
 - No deployment workflow yet. Nothing publishes this site
 
 ## Tools in use
 
-- Zensical: <https://zensical.org/docs/>, using the `classic` theme variant, which matches Material for MkDocs
+- Zensical: <https://zensical.org/docs/>, default theme with [IFRC primary colors](https://brand.ifrc.org/ifrc-brand-system/basics/colour) set in `docs/en/assets/stylesheets/extra.css`
 - uv: <https://docs.astral.sh/uv/>
 - Layout and conventions follow the [121 Platform manual](https://github.com/global-121/manual)
