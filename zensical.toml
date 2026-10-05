@@ -46,7 +46,7 @@ generator = false
 
 [project.theme]
 language = "en"
-font = false # To comply with GDPR: the default loads Inter from Google Fonts
+font = false # Inter is self hosted via extra.css, the default would load it from Google Fonts
 # No navigation.tabs: all sections live in the left sidebar, not a top bar
 features = [
   "navigation.top",

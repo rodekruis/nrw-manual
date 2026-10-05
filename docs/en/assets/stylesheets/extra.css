@@ -1,5 +1,53 @@
+/* Inter 4.1, self hosted instead of Google Fonts for GDPR. License: ../fonts/inter/LICENSE.txt */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: fallback;
+  src: url("../fonts/inter/InterVariable.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: fallback;
+  src: url("../fonts/inter/InterVariable-Italic.woff2") format("woff2");
+}
+
+/* JetBrains Mono 2.304, the weights the theme uses. License: ../fonts/jetbrains-mono/OFL.txt */
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url("../fonts/jetbrains-mono/JetBrainsMono-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: italic;
+  font-weight: 400;
+  font-display: fallback;
+  src: url("../fonts/jetbrains-mono/JetBrainsMono-Italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+  src: url("../fonts/jetbrains-mono/JetBrainsMono-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: italic;
+  font-weight: 700;
+  font-display: fallback;
+  src: url("../fonts/jetbrains-mono/JetBrainsMono-BoldItalic.woff2") format("woff2");
+}
+
 /* IFRC primary colors: https://brand.ifrc.org/ifrc-brand-system/basics/colour */
 :root > * {
+  --md-text-font: "Inter";
+  --md-code-font: "JetBrains Mono";
   --md-primary-fg-color: #011e41;
   --md-primary-fg-color--light: #34465f;
   --md-primary-fg-color--dark: #000f21;
