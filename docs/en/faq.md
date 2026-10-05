@@ -10,7 +10,7 @@ hide:
 
     The platform works best when:
 
-    - The hazards that matter to you are supported. In this pre-release that is **river floods**. More hazards are being added over time, see question 7
+    - The hazards that you have defined EAPs for or otherwise matter to you are supported. In this pre-release that is **river floods**. More hazards are being added over time, see question 7
     - You want one shared picture of risk that you can use with your government counterparts and partners, for example on a large screen in an Emergency Operations Centre
     - You are looking for **decision support**, not a decision maker. National Risk Watch shows forecasts, alert levels and exposed population. The decision to act stays with your National Society
 
