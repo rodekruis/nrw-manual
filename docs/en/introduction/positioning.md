@@ -4,7 +4,7 @@ hide:
   - toc
 ---
 
-National Risk Watch is a channel of visualized forecast data that your National Society can use to make decisions about early warning and early action.
+National Risk Watch is a platform with visualized forecast data that your National Society can use to make decisions about early warning and early action.
 
 It is built by the Netherlands Red Cross 510 team together with the IFRC GO team, hosted and maintained centrally, and operated locally by each National Society. It replaces the IBF Portal.
 
@@ -13,7 +13,7 @@ It is built by the Netherlands Red Cross 510 team together with the IFRC GO team
 - Collects forecasts for the hazards supported in your country from existing forecast providers
 - Combines those forecasts with historical data and population data to estimate who is likely to be affected
 - Shows the result as events on a map, with alert levels, exposed population, and the underlying data behind each number
-- Lets you drill from the national picture down to the admin areas where people are exposed
+- Lets you zoom in from the national level to the admin areas where people are exposed
 
 ### What the platform does not do
 

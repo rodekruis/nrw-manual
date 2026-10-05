@@ -3,7 +3,7 @@
 <!-- markdownlint-disable-next-line no-trailing-punctuation -->
 ## Welcome to the National Risk Watch user manual!
 
-National Risk Watch is a multi hazard risk monitoring and early warning platform built by the Netherlands Red Cross 510 team together with the IFRC GO team. It brings forecasts, historical data and population data together on one map so your National Society can decide earlier whether to act.
+National Risk Watch is a multi hazard risk monitoring and early warning platform built by the Netherlands Red Cross 510 team together with the IFRC GO team. It brings forecasts, historical data and population data together on one map so your National Society can decide in time whether to act or not.
 
 On the left you can find a navigation overview, or find the information you need by using the search bar on the top right.
 
@@ -36,7 +36,7 @@ On the left you can find a navigation overview, or find the information you need
 
     ---
 
-    The header, the map, the events panel, the legend, and the three ways to move around.
+    The header, the map, the events panel, the legend, and how to move around.
 
 - :material-waves:{ .lg .middle } [Floods](./hazards/floods/layers.md)
 
@@ -55,6 +55,12 @@ On the left you can find a navigation overview, or find the information you need
     ---
 
     Alert level, trigger, return period, exposed population, admin area, and the other terms used in the platform.
+
+- :material-frequently-asked-questions:{ .lg .middle } [FAQ](./faq.md)
+
+    ---
+
+    Fit for your National Society, requirements, support, cost, other hazards, data responsibility and monitoring your Early Action Protocol.
 
 </div>
 

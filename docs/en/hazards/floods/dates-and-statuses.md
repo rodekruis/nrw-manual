@@ -4,7 +4,7 @@ hide:
   - toc
 ---
 
-An event carries several dates, and they answer different questions. This page explains each one and what the status chips mean.
+An event carries several dates, and they answer different questions. This page explains each one and what the status labels mean.
 
 ### The dates on an event card
 
@@ -23,7 +23,7 @@ An event carries several dates, and they answer different questions. This page e
 
 ### Statuses
 
-The outlined chip on the event card tells you where the event sits in time.
+The outlined label on the event card tells you where the event sits in time.
 
 | Status | Meaning |
 | :--- | :--- |

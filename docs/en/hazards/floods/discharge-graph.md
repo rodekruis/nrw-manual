@@ -8,14 +8,12 @@ The river discharge forecast is the raw forecast behind a flood event. It is whe
 
 ### Opening the graph
 
-The **river discharge forecast** section sits inside the expanded event card, below the exposed areas table, and is **collapsed by default**. The label on the closed section, for example **5 year return period**, is the severity of the forecast peak.
+The **river discharge forecast** section sits inside the expanded event card, below the exposed areas table, and is **closed by default**. The label, for example **5 year return period**, is the severity of the forecast peak.
 
 1. Open the event, so the card expands.
 2. Scroll down inside the event card, past the exposed areas table.
-3. Click the **river discharge forecast** row, or the chevron at its right, to expand the graph.
-4. Click it again to collapse it.
-
-The **data sources** section directly below it works the same way.
+3. Click the **river discharge forecast** row, or the arrow (v) at its right, to open the graph.
+4. Click it again to close it.
 
 ![River discharge forecast graph](../../assets/img/DischargeGraph.png)
 
@@ -39,7 +37,7 @@ The **data sources** section directly below it works the same way.
 
 This is the most useful part of the graph and the easiest to skim past. Each horizontal line is the discharge value that counts as a flood of that rarity **at this station**, derived from that station's own history.
 
-Read the graph by asking which lines the forecast crosses, and when.
+Read the graph by asking which lines the forecast crosses, and when. An example for the 5 year return period is:
 
 - **A forecast that stays below every line** is normal seasonal water.
 - **A forecast that crosses the 1 year line** is water the river sees most years. Not usually a reason to act.
@@ -57,7 +55,7 @@ Because the lines come from each station's own record, the same 5 year line sits
 
 GloFAS does not produce one forecast. It produces **51**, each from slightly different starting conditions. The forecast range on the graph is that spread.
 
-The probability for a return period is the share of those 51 runs whose discharge crosses that return period's line.
+The percentage stated below the graph is the probability for a return period. This is the share of those 51 runs whose discharge crosses that return period's line.
 
 - If 13 of 51 runs cross the 5 year line, the probability of a 5 year flood is about 25 percent
 - If 38 of 51 cross it, the probability is about 75 percent
@@ -77,12 +75,11 @@ Both are "a 5 year flood is possible". They are very different decisions.
 
 ---
 
-### How to read it in practice
-
-1. Find the **highest return period line** the forecast crosses, and on which day it crosses it.
-2. Look at the **forecast range** at that crossing. Do most runs cross, or only the top few?
-3. Find the **peak** and its date. That is when the river is expected to be highest.
-4. Count the days between today and the crossing, and compare that with the lead time your actions need.
+!!! Tip "How to read it in practice"
+    1. Find the **highest return period line** the forecast crosses, and on which day it crosses it.
+    2. Look at the **forecast range** at that crossing. Do most runs cross, or only the top few?
+    3. Find the **peak** and its date. That is when the river is expected to be highest.
+    4. Count the days between today and the crossing, and compare that with the lead time your actions need.
 
 ### One station per event
 

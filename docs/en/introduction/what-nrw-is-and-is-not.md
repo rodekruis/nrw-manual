@@ -9,7 +9,7 @@ A short reference you can share with colleagues and partners.
 ### National Risk Watch is
 
 - An aggregator and a visualizer of existing forecasts
-- A single place to see, per country, which hazards are forecast, how severe they are, and how many people are exposed
+- A single place to see, per country, which hazards are forecast, how severe and likely they are, and how many people are exposed
 - Transparent about its sources: every event shows the data it was built from
 - Centrally hosted and maintained as one platform for all National Societies, and operated locally
 - Part of the IFRC GO ecosystem, built jointly by the Netherlands Red Cross 510 team and the IFRC GO team
@@ -18,7 +18,7 @@ A short reference you can share with colleagues and partners.
 
 - A forecast producer. We do not model weather or river flow ourselves
 - A decision maker. It does not activate your Early Action Protocol and does not approve funding
-- A complete picture of risk. It shows the hazards and the data sources that are available for your country, which is not everything that could affect you
+- A complete picture of risk. It shows the hazards and the data sources that are available for your country. This is not a complete inventory of everything that could affect you
 - A beneficiary registration or response management system
 - A replacement for your national hydrological or meteorological service, or for local knowledge
 

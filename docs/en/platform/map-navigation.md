@@ -4,19 +4,19 @@ hide:
   - toc
 ---
 
-There are two ways to move around National Risk Watch: through the map, and through the event cards in the events panel. Both lead to the same place, so use whichever matches how you are thinking.
+There are two ways to move around National Risk Watch: through the map, and through the events panel. The first displays the national overview from which you can navigate to the event and admin areas; the latter displays the event from which you can navigate to the admin areas or zoom out. When you close the event, the map shifts back to the national view.
 
 ### Zooming and panning
 
-- Use the **plus** and **minus** buttons at the top right of the map, or scroll to zoom
-- Drag the map to pan
-- The map is bounded to your country, so you cannot pan away from it
+- Use the **plus** and **minus** buttons at the top right of the map, or scroll with your mouse, to zoom in and out
+- Drag the map to change the visible frame in any direction
+- You cannot zoom out beyond the national view
 
 ### Opening an event from the map
 
-In the national overview each event is a colored marker, shaded by its alert level. Click the marker to open the event. The map zooms to the exposed area, the exposed admin areas are shaded, and the event card in the panel expands.
+In the national overview each event is a colored marker, shaded by its alert level. Click the marker to open the event. The map zooms to the exposed admin areas, shaded in colors that reflect the flood depth and exposed population. The events panel expands to display the detailed information in the event card.
 
-### Drilling down into admin areas
+### Zooming in on admin areas
 
 Once an event is open, the exposed admin areas are shaded on the map and listed in the event card.
 
@@ -24,24 +24,24 @@ Once an event is open, the exposed admin areas are shaded on the map and listed 
 2. The map zooms to it and the next admin level down is shaded inside it.
 3. Click again to select a single area at the lowest available level. The selected area is outlined and the others are dimmed.
 
-![Drill down into an admin area](../assets/img/MapDrillDown.png)
+![Zoom in on an admin area](../assets/img/MapDrillDown.png)
 
 !!! Note "How deep you can go depends on your country"
     The admin levels available follow the boundaries loaded for your country, for example region, district, and the level below it. The names shown come from the global administrative boundary dataset used by the platform, which may differ from the names your National Society uses internally.
 
-### Breadcrumbs: getting back up
+### Finding your way back on the map
 
-The breadcrumb at the top left of the map is the back navigation of the map. It shows where you are and lets you step back up.
+At the top left of the map you will see a short trail of place names, for example **Awash River Basin > Zone 3 > Amibara**. It shows which part of the country you are looking at, going from the largest area to the smallest.
 
-- In the event view it shows the event location, which returns you to the national overview
-- One level down it reads **location > district**, and clicking the location returns you to the whole event
-- Two levels down it reads **location > district > area**, and each earlier step is clickable
+- When you first open an event, the trail shows only the event area (for example, **Awash River Basin**). Click it to go back to the map of the whole country.
+- When you zoom into a district, the district name is added to the trail (**Awash River Basin > Zone 3**). Click **Awash River Basin** to see the whole event area again.
+- When you zoom in further, the smaller area is added too (**Awash River Basin > Zone 3 > Amibara**). Click **Awash River Basin** or **Zone 3** to go back to that level.
 
 !!! Note "The browser back button works too"
-    Browser back steps you up one level, the same as clicking the previous breadcrumb. Browser forward returns you to where you were.
+    You can also use the back and forward arrows of your web browser (top left of your browser window, next to the address bar). **Back** (←) takes you one step back to a wider view. **Forward** (→) takes you back to where you were.
 
 ### Closing an event
 
-Click the **x** at the top right of the expanded event card, or click the event location in the breadcrumb, to return to the national overview.
+Click the **x** at the top right of the expanded event card, or click the event location in the trail at the top left of the map, to return to the national overview.
 
 -8<- "docs/en/_snippets/contact-support.md"

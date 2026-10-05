@@ -6,6 +6,9 @@ site_url: https://manual.nationalriskwatch.org/
 docs_dir: "../../docs/en"
 site_dir: "../../www/en"
 
+extra_css:
+  - assets/stylesheets/extra.css
+
 markdown_extensions:
   - attr_list
   - def_list
@@ -72,3 +75,4 @@ nav:
       - "What Is Not Yet Available": "release/not-yet-available.md"
       - "Coming from the IBF Portal": "release/coming-from-ibf.md"
   - "Glossary": "glossary.md"
+  - "FAQ": "faq.md"

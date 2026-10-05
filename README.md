@@ -112,9 +112,10 @@ Screenshots live in `docs/en/assets/img/` and are captured from the demo prototy
 | File | State captured |
 | :--- | :--- |
 | `ScreenOverview.png` | National overview, events panel with two events |
-| `EventsPanel.png` | Events panel, collapsed cards |
+| `EventsPanel.png` | Events panel, list of events |
 | `FloodLayers.png` | Event view, flood depth and exposed population on the map |
-| `ImpactBasedMap.png` | Event view, map only |
+| `EventView.png` | Event view, full screen, one event open with the event card, exposed admin areas and legend |
+| `ImpactBasedMap.png` | Event view, full screen with the exposed population legend row |
 | `MapDrillDown.png` | Drilled into a zone, woreda level table |
 | `LegendExposure.png` | Legend strip, flood depth and exposed population classes |
 | `DischargeGraph.png` | River discharge forecast, expanded |
@@ -124,7 +125,7 @@ Screenshots live in `docs/en/assets/img/` and are captured from the demo prototy
 - Terminology in the text is from an earlier Malawi mock and does not yet match the screenshots: pages say districts and TAs where the app shows zones and woredas, and call the gauge a GloFAS station where the app labels it River gauge
 - Alert level pages describe low, medium and high; the app legend currently shows low and high only
 - `platform/exporting.md` and `platform/logging-in.md` describe intent, since neither feature exists yet
-- Theme assets are missing: no logo, favicon or `extra.css`, so the site renders in stock Material blue rather than Red Cross red and navy
+- Theme assets are missing: no logo or favicon, so the site renders in stock Material blue rather than Red Cross red and navy
 - No deployment workflow yet. Nothing publishes this site
 
 ## Tools in use
