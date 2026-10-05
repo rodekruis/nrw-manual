@@ -24,7 +24,7 @@ docs/en/                 page content, one .md per page
   assets/img/            screenshots
 ```
 
-Zensical requires `docs_dir` and `site_dir` to sit inside the directory of the config file, so configs live at the repository root. A second language would get its own file, for example `zensical.fr.toml` pointing at `docs/fr` and `www/fr`.
+Zensical requires `docs_dir` and `site_dir` to sit inside the directory of the config file, so configs live at the repository root. See [Multiple languages](#multiple-languages) for adding a second language.
 
 Sections: introduction and positioning, navigating the platform, hazard guides, about this release, glossary.
 
@@ -103,6 +103,58 @@ Screenshots live in `docs/en/assets/img/` and are captured from the demo prototy
 | `MapDrillDown.png` | Drilled into a zone, woreda level table |
 | `LegendExposure.png` | Legend strip, flood depth and exposed population classes |
 | `DischargeGraph.png` | River discharge forecast, expanded |
+
+### Multiple languages
+
+Each language is a separate Zensical site with its own config, content folder and output folder. English is the default and uses `zensical.toml`; every other language gets `zensical.<lang>.toml`. French is used as the example below.
+
+| | English | French |
+| :--- | :--- | :--- |
+| Config | `zensical.toml` | `zensical.fr.toml` |
+| Content | `docs/en/` | `docs/fr/` |
+| Output | `www/en/` | `www/fr/` |
+| URL | `/en/` | `/fr/` |
+
+To add a language:
+
+1. Copy `docs/en/` to `docs/fr/` and translate the pages. Keep the filenames, so the `nav` paths and links between pages stay the same
+2. Point the snippet include at the end of each page to the translated snippet: `-8<- "docs/fr/_snippets/contact-support.md"`
+3. Replace screenshots in `docs/fr/assets/img/` if the interface is shown in French. Keep the filenames
+4. Copy `zensical.toml` to `zensical.fr.toml` and change:
+   - `site_url` to `https://manual.nationalriskwatch.org/fr/`
+   - `docs_dir` to `docs/fr` and `site_dir` to `www/fr`
+   - `language` under `[project.theme]` to `fr`, which translates the theme's own labels such as search and navigation
+   - `site_name` and the titles in `nav`
+5. Add the language selector to the `[project.extra]` section of **every** config, so each site links to the others:
+
+   ```toml
+   [project.extra]
+   generator = false
+   alternate = [
+     { name = "English", link = "/en/", lang = "en" },
+     { name = "Français", link = "/fr/", lang = "fr" },
+   ]
+   ```
+
+Serve or build a language by passing its config:
+
+```sh
+uv run zensical serve --config-file zensical.fr.toml
+uv run zensical build --config-file zensical.fr.toml
+```
+
+With Docker:
+
+```sh
+docker compose run --rm build build --config-file zensical.fr.toml
+```
+
+Things to know:
+
+- Each site only sees its own `docs/<lang>/` folder, so the stylesheet and fonts in `assets/stylesheets/` and `assets/fonts/` are copied along in step 1. Keep the copies in sync when changing them
+- The selector links to the home page of the other language, not to the same page in that language
+- Search only covers the language being read
+- Builds land in `www/<lang>/`, so the host has to serve `www/` as the site root. Nothing redirects `/` to `/en/` yet; that belongs in the deployment setup
 
 ## Open items before publishing
 
