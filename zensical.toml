@@ -45,9 +45,8 @@ nav = [
 generator = false
 
 [project.theme]
-variant = "classic"
 language = "en"
-font = false # To comply with GDPR
+font = false # To comply with GDPR: the default loads Inter from Google Fonts
 # No navigation.tabs: all sections live in the left sidebar, not a top bar
 features = [
   "navigation.top",
@@ -55,9 +54,29 @@ features = [
   "navigation.instant.progress",
 ]
 
-[project.theme.palette]
+# IFRC colors are set in extra.css
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
 primary = "custom"
 accent = "custom"
+toggle.icon = "lucide/sun-moon"
+toggle.name = "Switch to light mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+primary = "custom"
+accent = "custom"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+primary = "custom"
+accent = "custom"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to system preference"
 
 [project.markdown_extensions]
 attr_list = {}

@@ -1,21 +1,19 @@
-/* Admonitions (text boxes): one step larger than the Material default of .64rem */
-.md-typeset .admonition,
-.md-typeset details {
-  font-size: .72rem;
+/* IFRC primary colors: https://brand.ifrc.org/ifrc-brand-system/basics/colour */
+:root > * {
+  --md-primary-fg-color: #011e41;
+  --md-primary-fg-color--light: #34465f;
+  --md-primary-fg-color--dark: #000f21;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: #ffffffb3;
+  --md-accent-fg-color: #ee2435;
+  --md-accent-fg-color--transparent: #ee24351a;
+  --md-accent-bg-color: #ffffff;
+  --md-accent-bg-color--light: #ffffffb3;
 }
 
-/* "How to read it in practice" and other tips: green box */
-.md-typeset .admonition.tip,
-.md-typeset details.tip {
-  border-color: #2e7d32;
-}
-.md-typeset .tip > .admonition-title,
-.md-typeset .tip > summary {
-  background-color: rgba(46, 125, 50, .1);
-}
-.md-typeset .tip > .admonition-title::before,
-.md-typeset .tip > summary::before {
-  background-color: #2e7d32;
+/* IFRC dark blue is unreadable on the dark scheme, so links use a light tint of it */
+[data-md-color-scheme="slate"] {
+  --md-typeset-a-color: #8fa5c4;
 }
 
 /* Alert level labels, matching the pill shaped labels in National Risk Watch */
