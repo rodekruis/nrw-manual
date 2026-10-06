@@ -45,6 +45,8 @@ nav = [
 generator = false
 
 [project.theme]
+# Language independent assets, copied into the site alongside the theme's own
+custom_dir = "theme"
 language = "en"
 font = false # Inter is self hosted via extra.css, the default would load it from Google Fonts
 # No navigation.tabs: all sections live in the left sidebar, not a top bar

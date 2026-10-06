@@ -22,6 +22,7 @@ pyproject.toml, uv.lock  Python dependencies, managed with uv
 docs/en/                 page content, one .md per page
   _snippets/             shared fragments included with -8<-, not rendered as pages
   assets/img/            screenshots
+theme/assets/            language independent: stylesheet and self hosted fonts
 ```
 
 Zensical requires `docs_dir` and `site_dir` to sit inside the directory of the config file, so configs live at the repository root. See [Multiple languages](#multiple-languages) for adding a second language.
@@ -151,7 +152,7 @@ docker compose run --rm build build --config-file zensical.fr.toml
 
 Things to know:
 
-- Each site only sees its own `docs/<lang>/` folder, so the stylesheet and fonts in `assets/stylesheets/` and `assets/fonts/` are copied along in step 1. Keep the copies in sync when changing them
+- The stylesheet and fonts in `theme/assets/` are shared through `custom_dir = "theme"`, which the copied config keeps, so there is nothing to copy or keep in sync
 - The selector links to the home page of the other language, not to the same page in that language
 - Search only covers the language being read
 - Builds land in `www/<lang>/`, so the host has to serve `www/` as the site root. Nothing redirects `/` to `/en/` yet; that belongs in the deployment setup
@@ -166,6 +167,6 @@ Things to know:
 
 ## Tools in use
 
-- Zensical: <https://zensical.org/docs/>, default theme with [IFRC primary colors](https://brand.ifrc.org/ifrc-brand-system/basics/colour) set in `docs/en/assets/stylesheets/extra.css`
+- Zensical: <https://zensical.org/docs/>, default theme with [IFRC primary colors](https://brand.ifrc.org/ifrc-brand-system/basics/colour) set in `theme/assets/stylesheets/extra.css`
 - uv: <https://docs.astral.sh/uv/>
 - Layout and conventions follow the [121 Platform manual](https://github.com/global-121/manual)
