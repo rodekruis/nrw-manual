@@ -1,0 +1,105 @@
+# See: https://zensical.org/docs/setup/basics/
+
+[project]
+site_name = "National Risk Watch User Manual"
+site_url = "https://manual.nationalriskwatch.org/"
+# Zensical requires docs_dir and site_dir inside the directory of this file
+docs_dir = "docs/en"
+site_dir = "www/en"
+extra_css = ["assets/stylesheets/extra.css"]
+
+nav = [
+  { "Home" = "index.md" },
+  { "Introduction to National Risk Watch" = [
+    { "Welcome and Positioning" = "introduction/positioning.md" },
+    { "From Early Warning to Early Action" = "introduction/early-warning-early-action.md" },
+    { "Impact Based Forecasting Explained" = "introduction/impact-based-forecasting.md" },
+    { "What National Risk Watch Is and Is Not" = "introduction/what-nrw-is-and-is-not.md" },
+  ] },
+  { "Navigating the Platform" = [
+    { "Screen Overview" = "platform/screen-overview.md" },
+    { "Map Navigation" = "platform/map-navigation.md" },
+    { "Events Panel and Layers" = "platform/event-panel-and-layers.md" },
+    { "Understanding the Legend" = "platform/legend.md" },
+    { "Exporting Data" = "platform/exporting.md" },
+    { "Logging In" = "platform/logging-in.md" },
+  ] },
+  { "Hazard Guides" = [
+    { "Floods" = [
+      { "Flood Layers Explained" = "hazards/floods/layers.md" },
+      { "Data Sources" = "hazards/floods/data-sources.md" },
+      { "Reading the Discharge Graph" = "hazards/floods/discharge-graph.md" },
+      { "Event Dates and Statuses" = "hazards/floods/dates-and-statuses.md" },
+      { "Limitations and Feedback" = "hazards/floods/limitations.md" },
+    ] },
+  ] },
+  { "About This Release" = [
+    { "What Is Not Yet Available" = "release/not-yet-available.md" },
+    { "Coming from the IBF Portal" = "release/coming-from-ibf.md" },
+  ] },
+  { "Glossary" = "glossary.md" },
+  { "FAQ" = "faq.md" },
+]
+
+[project.extra]
+generator = false
+
+[project.theme]
+# Language independent assets, copied into the site alongside the theme's own
+custom_dir = "theme"
+language = "en"
+font = false # Inter is self hosted via extra.css, the default would load it from Google Fonts
+# No navigation.tabs: all sections live in the left sidebar, not a top bar
+features = [
+  "navigation.top",
+  "navigation.instant",
+  "navigation.instant.progress",
+]
+
+# IFRC colors are set in extra.css
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+primary = "custom"
+accent = "custom"
+toggle.icon = "lucide/sun-moon"
+toggle.name = "Switch to light mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+primary = "custom"
+accent = "custom"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+primary = "custom"
+accent = "custom"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to system preference"
+
+[project.markdown_extensions]
+attr_list = {}
+def_list = {}
+md_in_html = {}
+admonition = {}
+toc.toc_depth = "1-1"
+toc.permalink = true
+toc.permalink_title = "Specific link to this section"
+pymdownx.emoji.emoji_index = "zensical.extensions.emoji.twemoji"
+pymdownx.emoji.emoji_generator = "zensical.extensions.emoji.to_svg"
+pymdownx.details = {}
+pymdownx.snippets.base_path = ["."]
+pymdownx.snippets.check_paths = true
+pymdownx.superfences = {}
+pymdownx.betterem = {}
+
+[project.plugins.search]
+
+[project.plugins.glightbox]
+
+# Snippets are included into pages, not rendered as pages of their own
+[project.plugins.exclude]
+glob = ["_snippets/*"]

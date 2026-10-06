@@ -1,0 +1,86 @@
+/* Inter 4.1, self hosted instead of Google Fonts for GDPR. License: ../fonts/inter/LICENSE.txt */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: fallback;
+  src: url("../fonts/inter/InterVariable.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: fallback;
+  src: url("../fonts/inter/InterVariable-Italic.woff2") format("woff2");
+}
+
+/* JetBrains Mono 2.304, the weights the theme uses. License: ../fonts/jetbrains-mono/OFL.txt */
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url("../fonts/jetbrains-mono/JetBrainsMono-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: italic;
+  font-weight: 400;
+  font-display: fallback;
+  src: url("../fonts/jetbrains-mono/JetBrainsMono-Italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+  src: url("../fonts/jetbrains-mono/JetBrainsMono-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: italic;
+  font-weight: 700;
+  font-display: fallback;
+  src: url("../fonts/jetbrains-mono/JetBrainsMono-BoldItalic.woff2") format("woff2");
+}
+
+/* IFRC primary colors: https://brand.ifrc.org/ifrc-brand-system/basics/colour */
+:root > * {
+  --md-text-font: "Inter";
+  --md-code-font: "JetBrains Mono";
+  --md-primary-fg-color: #011e41;
+  --md-primary-fg-color--light: #34465f;
+  --md-primary-fg-color--dark: #000f21;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: #ffffffb3;
+  --md-accent-fg-color: #ee2435;
+  --md-accent-fg-color--transparent: #ee24351a;
+  --md-accent-bg-color: #ffffff;
+  --md-accent-bg-color--light: #ffffffb3;
+}
+
+/* IFRC dark blue is unreadable on the dark scheme, so links use a light tint of it */
+[data-md-color-scheme="slate"] {
+  --md-typeset-a-color: #8fa5c4;
+}
+
+/* Alert level labels, matching the pill shaped labels in National Risk Watch */
+.md-typeset .nrw-alert {
+  display: inline-block;
+  padding: .1rem .7rem;
+  border-radius: 1.2rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.md-typeset .nrw-alert--low {
+  background-color: #ffc635;
+  color: #323232;
+}
+.md-typeset .nrw-alert--medium {
+  background-color: #ff8a00;
+  color: #323232;
+}
+.md-typeset .nrw-alert--high {
+  background-color: #f5333f;
+  color: #ffffff;
+}
