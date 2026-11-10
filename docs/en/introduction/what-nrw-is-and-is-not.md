@@ -1,5 +1,6 @@
 ---
 title: What National Risk Watch Is and Is Not
+icon: lucide/scale
 hide:
   - toc
 ---
@@ -22,7 +23,7 @@ A short reference you can share with colleagues and partners.
 - A beneficiary registration or response management system
 - A replacement for your national hydrological or meteorological service, or for local knowledge
 
-!!! Question "Coming from the IBF Portal?"
+!!! Question nrw-icon-arrow-right-left "Coming from the IBF Portal?"
     The positioning has not changed: the platform still shows impact based forecasts and still relies on external forecast providers. What changes is that National Risk Watch is one platform for all National Societies rather than one instance per country, that it is multi hazard by design, and that it makes the underlying data sources visible. See [What is not yet available](../release/not-yet-available.md) for what this pre-release does not yet do.
 
 -8<- "docs/en/_snippets/contact-support.md"

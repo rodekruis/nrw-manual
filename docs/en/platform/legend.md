@@ -1,5 +1,6 @@
 ---
 title: Understanding the Legend
+icon: lucide/list-tree
 hide:
   - toc
 ---
@@ -32,7 +33,7 @@ This is the part most people miss. The five exposed population classes are **not
 
 The practical consequence: **the same shade of red means different numbers at different levels.** A dark area inside a district is the most exposed area in that district, not necessarily a nationally severe number. Always read the figure in the exposed areas table next to the color.
 
-!!! Warning "Do not compare colors across views"
+!!! Warning nrw-icon-palette "Do not compare colors across views"
     Two areas that look equally dark in two different views can have very different exposed populations. Compare the numbers, not the shades.
 
 ### Alert level colors are fixed

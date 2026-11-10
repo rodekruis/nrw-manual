@@ -1,5 +1,6 @@
 ---
 title: What Is Not Yet Available
+icon: lucide/hourglass
 hide:
   - toc
 ---
@@ -14,19 +15,21 @@ This is a pre-release. It is deliberately narrow. If you are coming from the IBF
 | **Login and accounts** | You do not need a personal account to open the platform. This means there are no personal settings or saved views available. See [Logging in](../platform/logging-in.md). | Planned. |
 | **Alert emails and WhatsApp messages** | You will not be notified when an event is created or an alert level changes. You have to open the platform to see it. | Planned. |
 | **Ended events** | Past events disappear from the overview instead of showing as ended. See [Event dates and statuses](../hazards/floods/dates-and-statuses.md). | In design. |
-| **Export** | **Export view** is in the header but not yet functional. See [Exporting data](../platform/exporting.md). | Planned. |
 | **Flood depth on low and medium events** | No flood map and no exposed population on events below the trigger return period. | Depends on source data availability. |
+| **Flood maps per return period** | The flood depth layer always shows the 10 year map, also for events at a lower return period. Flooded area and exposed population are then likely to be overstated. | Depends on source data availability. |
 | **Total population** | Only exposed population is shown, so you cannot see it as a share of the people living in an area. | Planned, not prioritized for this release. |
 | **Data sources** | Adding national and local sources for flood models is planned. | Planned. |
 
-!!! Warning "Do not rely on National Risk Watch alone for notification"
+**Export view** is available in the header. We are continuing to improve exports to make them clearer and more useful. See [Exporting data](../platform/exporting.md).
+
+!!! Warning nrw-icon-bell-off "Do not rely on National Risk Watch alone for notification"
     Because alert emails and messages are not yet available, an event can be created in National Risk Watch without anyone on your team noticing. Until notifications are available, maintain your current monitoring routine, and check the platform as regularly as your protocol requires.
 
 ### What is in this pre-release
 
 - Flood events for your country, with alert level, status, trigger indication and advisory
 - Exposed population per admin area, with zoom in to the lowest available level
-- The flood depth layer on events that reach the trigger return period
+- The flood depth layer, based on the 10 year flood map, on events that reach the trigger return period
 - River discharge forecast graph with return period
 - The data sources behind every event
 - The standalone platform, usable on a laptop or on a large screen in an Emergency Operations Centre

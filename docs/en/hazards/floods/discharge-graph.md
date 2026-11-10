@@ -1,5 +1,6 @@
 ---
 title: Reading the Discharge Graph
+icon: lucide/chart-line
 hide:
   - toc
 ---
@@ -46,7 +47,7 @@ Read the graph by asking which lines the forecast crosses, and when. An example 
 
 Because the lines come from each station's own record, the same 5 year line sits at a different discharge value at every station. Two events at the same return period are comparable in rarity, not in volume of water.
 
-!!! Note "Where the line and the alert level meet"
+!!! Note nrw-icon-chart-line "Where the line and the alert level meet"
     Crossing a return period line is only half of what sets the alert level. The other half is how many of the 51 model runs cross it. See below.
 
 ---
@@ -70,12 +71,12 @@ Both are "a 5 year flood is possible". They are very different decisions.
 | Narrow forecast range | The model runs agree. Timing and size are relatively firm |
 | Wide forecast range | The model runs disagree. The peak could arrive earlier, later, or be much larger or smaller |
 
-!!! Important "Probability, severity and lead time together make a trigger"
+!!! Important nrw-icon-zap "Probability, severity and lead time together make a trigger"
     Your Early Action Protocol activates on a specific return period, reached with at least a specific probability, at no less than a specific lead time. All three have to hold. This is why an event can show a high alert level without showing a trigger. See [From early warning to early action](../../introduction/early-warning-early-action.md).
 
 ---
 
-!!! Tip "How to read it in practice"
+!!! Tip nrw-icon-eye "How to read it in practice"
     1. Find the **highest return period line** the forecast crosses, and on which day it crosses it.
     2. Look at the **forecast range** at that crossing. Do most runs cross, or only the top few?
     3. Find the **peak** and its date. That is when the river is expected to be highest.

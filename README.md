@@ -161,7 +161,7 @@ Things to know:
 
 - Terminology in the text is from an earlier Malawi mock and does not yet match the screenshots: pages say districts and TAs where the app shows zones and woredas, and call the gauge a GloFAS station where the app labels it River gauge
 - Alert level pages describe low, medium and high; the app legend currently shows low and high only
-- `platform/exporting.md` and `platform/logging-in.md` describe intent, since neither feature exists yet
+- `platform/logging-in.md` describes intent, since login is not yet available
 - Theme assets are missing: no logo or favicon
 - No deployment workflow yet. Nothing publishes this site
 

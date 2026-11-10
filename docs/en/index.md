@@ -1,3 +1,7 @@
+---
+icon: lucide/house
+---
+
 # National Risk Watch User Manual
 
 <!-- markdownlint-disable-next-line no-trailing-punctuation -->
@@ -7,10 +11,10 @@ National Risk Watch is a multi hazard risk monitoring and early warning platform
 
 On the left you can find a navigation overview, or find the information you need by using the search bar on the top right.
 
-!!! Note "This manual covers the standalone platform"
+!!! Note nrw-icon-book-open "This manual covers the standalone platform"
     National Risk Watch also exists as a view inside IFRC GO. This manual describes the standalone platform, which opens in its own browser window and does not require a GO account.
 
-!!! Important "This is a pre-release"
+!!! Important nrw-icon-flask-conical "This is a pre-release"
     You are using an early version of National Risk Watch that covers floods only. Read [What is not yet available](./release/not-yet-available.md) before you rely on it operationally, especially if you are used to working in the IBF Portal.
 
 ---

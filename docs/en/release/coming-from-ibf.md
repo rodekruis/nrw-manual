@@ -1,5 +1,6 @@
 ---
 title: Coming from the IBF Portal
+icon: lucide/arrow-right-left
 hide:
   - toc
 ---
@@ -25,6 +26,6 @@ If you used the IBF Portal, most of what you know still applies. This page maps 
 
 ### Things you had in IBF that are not here yet
 
-Alert emails, login, exports and hazards other than floods. See [What is not yet available](./not-yet-available.md) for the full list and status.
+Alert emails, login and hazards other than floods are not yet available. Exports are available, and are still being improved. See [What is not yet available](./not-yet-available.md) for the full list and status.
 
 -8<- "docs/en/_snippets/contact-support.md"

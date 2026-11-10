@@ -1,5 +1,6 @@
 ---
 title: Map Navigation
+icon: lucide/map
 hide:
   - toc
 ---
@@ -26,7 +27,7 @@ Once an event is open, the exposed admin areas are shaded on the map and listed 
 
 ![Zoom in on an admin area](../assets/img/MapDrillDown.png)
 
-!!! Note "How deep you can go depends on your country"
+!!! Note nrw-icon-map-pinned "How deep you can go depends on your country"
     The admin levels available follow the boundaries loaded for your country, for example region, district, and the level below it. The names shown come from the global administrative boundary dataset used by the platform, which may differ from the names your National Society uses internally.
 
 ### Finding your way back on the map
@@ -37,7 +38,7 @@ At the top left of the map you will see a short trail of place names, for exampl
 - When you zoom into a district, the district name is added to the trail (**Awash River Basin > Zone 3**). Click **Awash River Basin** to see the whole event area again.
 - When you zoom in further, the smaller area is added too (**Awash River Basin > Zone 3 > Amibara**). Click **Awash River Basin** or **Zone 3** to go back to that level.
 
-!!! Note "The browser back button works too"
+!!! Note nrw-icon-arrow-left "The browser back button works too"
     You can also use the back and forward arrows of your web browser (top left of your browser window, next to the address bar). **Back** (←) takes you one step back to a wider view. **Forward** (→) takes you back to where you were.
 
 ### Closing an event

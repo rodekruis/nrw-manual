@@ -1,5 +1,6 @@
 ---
 title: Glossary
+icon: lucide/book-a
 hide:
   - toc
 ---
@@ -19,7 +20,7 @@ Terms used in National Risk Watch and in this manual.
 | **Event** | One hazard situation in one region of your country, opened when a forecast crosses a threshold and updated as forecasts change. |
 | **Event created** | When the platform first opened the event, meaning when monitoring of it began. Not when flooding starts. |
 | **Exposed population** | The estimated number of people inside the area a hazard is forecast to reach. For floods, that is the number of people in admin areas forecast to have at least 10 cm of water at the event's peak. This is calculated by overlaying the flood depth map on the population grid. This is not the total population of the admin area. |
-| **Flood depth** | How deep water is expected to be at the peak of an event. The name of the blue layer on the map that indicates the area the flood is forecast to reach. This is also referred to as flood extent map. Only produced for events reaching the trigger return period. |
+| **Flood depth** | How deep water is expected to be at the peak of an event. The name of the blue layer on the map that indicates the area the flood is forecast to reach. This is also referred to as flood extent map. Only produced for events reaching the trigger return period. Always based on the 10 year flood map, also when the event's return period is lower. |
 | **GloFAS** | The Global Flood Awareness System, run by Copernicus. The only river discharge forecast source for now. Produces 51 forecasts per day per station, out to 7 days. |
 | **Imminent** | Status for an event that is in the future. The window in which early action is possible. |
 | **Impact based forecasting** | Combining a weather or hydrological forecast with historical data and population data to estimate what the weather will do, not only what it will be. |

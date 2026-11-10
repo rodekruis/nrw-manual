@@ -1,10 +1,11 @@
 ---
 title: Logging In
+icon: lucide/log-in
 hide:
   - toc
 ---
 
-!!! Important "No login in this pre-release"
+!!! Important nrw-icon-lock-open "No login in this pre-release"
     The standalone platform is currently open without a login. Anyone with the link can open it and see the events for the country it is configured for. Accounts and sign in are planned for a later release.
 
 ### What this means for now

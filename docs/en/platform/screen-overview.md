@@ -1,5 +1,6 @@
 ---
 title: Screen Overview
+icon: lucide/monitor
 hide:
   - toc
 ---
@@ -36,7 +37,7 @@ When you open an event, the map zooms to the exposed admin areas and the event c
 | **Events panel** | Shows the event card of the selected event: alert level, status, trigger, advisory, dates and the exposed areas table. |
 | **Legend** | Switches to flood depth and exposed population. |
 
-!!! Note "Designed for large screens too"
+!!! Note nrw-icon-monitor "Designed for large screens too"
     The standalone platform is used both on a laptop and on a large monitor in an Emergency Operations Centre. The layout widens the map on larger screens. There is no separate display mode to switch on.
 
 -8<- "docs/en/_snippets/contact-support.md"

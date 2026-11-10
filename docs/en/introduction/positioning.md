@@ -1,5 +1,6 @@
 ---
 title: Welcome and Positioning
+icon: lucide/compass
 hide:
   - toc
 ---
@@ -23,7 +24,7 @@ National Risk Watch does not produce forecasts and does not decide for you.
 - **Forecasts carry uncertainty.** Because forecasts come from different sources and are produced at different scales, you still have to apply judgment before you act.
 - **The decision to act stays with you.** Act according to your own protocols, whether that is an Early Action Protocol, a contingency plan, a local standard operating procedure, or your own reading of the situation.
 
-!!! Note "Where to look next"
+!!! Note nrw-icon-compass "Where to look next"
     To understand how forecasts become the numbers you see on the map, read [Impact based forecasting explained](./impact-based-forecasting.md). For the short version of what the platform is and is not, read [What National Risk Watch is and is not](./what-nrw-is-and-is-not.md).
 
 -8<- "docs/en/_snippets/contact-support.md"

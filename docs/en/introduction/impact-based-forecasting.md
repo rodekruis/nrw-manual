@@ -1,5 +1,6 @@
 ---
 title: Impact Based Forecasting Explained
+icon: lucide/target
 hide:
   - toc
 ---
@@ -31,7 +32,7 @@ This distinction matters and is easy to misread.
 
 An admin area is shaded according to its exposed population, even when only part of that area is expected to be affected. A large district can therefore look severe simply because more people live in it.
 
-!!! Note "Zoom in before you plan"
+!!! Note nrw-icon-zoom-in "Zoom in before you plan"
     Coloring is applied to the whole admin area polygon, not only to the part expected to flood, so a coarse level tells you where to look rather than where to act. Zoom in to the lowest available admin level before planning. See [Map navigation](../platform/map-navigation.md).
 
 ### What this means for your decision

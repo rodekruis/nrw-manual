@@ -1,5 +1,6 @@
 ---
 title: Limitations and Feedback
+icon: lucide/triangle-alert
 hide:
   - toc
 ---
@@ -12,6 +13,7 @@ Known limitations of the flood information in this pre-release, in one place. No
 - **How the flood develops.** The flood depth layer shows the peak only, not the arrival or the recession.
 - **Flash and urban flooding.** The platform currently works from river discharge. Rainfall driven flash flooding and urban drainage flooding are not represented.
 - **Where the water will be on a low or medium event.** Flood depth and exposed population are only produced for events that reach the trigger return period. See [Flood layers explained](./layers.md).
+- **The flood extent for the event's own return period.** The flood depth layer always shows the 10 year map. For events at a lower return period, the flooded area, the depths and the exposed population are likely to be overstated.
 - **Who exactly is exposed.** The exposed population is a 100 m population grid intersected with a modeled flood depth grid, counting people in water forecast to be at least 10 cm deep. It is not a count of individuals and not a beneficiary list.
 - **How many people live there in total.** Only the exposed population is shown. Total population per admin area, and the ratio between the two, are not in this release.
 
@@ -21,7 +23,7 @@ Known limitations of the flood information in this pre-release, in one place. No
 - Which admin levels are available, and whether their names match your own
 - What thresholds and return periods are set, and whether they match your Early Action Protocol
 
-!!! Important "Check your configuration"
+!!! Important nrw-icon-settings "Check your configuration"
     If the thresholds, return periods, admin names or river stations in the platform do not match what your National Society works with, that is a configuration issue we can fix. Tell your focal point or contact us directly.
 
 ### Tell us what is missing

@@ -1,5 +1,6 @@
 ---
 title: Events Panel and Layers
+icon: lucide/layers
 hide:
   - toc
 ---
@@ -31,7 +32,7 @@ Click an event to see more details. The event opens in the list as the event car
 | **Data sources** | The datasets this event was built from. Closed by default, click to open. |
 | **Event created and last updated** | When the event first appeared and when the forecast behind it last refreshed. |
 
-!!! Note "Two sections are closed until you open them"
+!!! Note nrw-icon-list-collapse "Two sections are closed until you open them"
     The **river discharge forecast** and the **data sources** sections sit at the bottom of the event card, below the exposed areas table, and are closed when the event card opens. Scroll down inside the event card and click the row, or the arrow (v) at its right, to open either one. Click again to close it. The forecast graph and the list of datasets behind the event are both in there, so it is worth opening them before you act on what the card says.
 
 ### Layers
@@ -40,7 +41,7 @@ The layers button, below the zoom controls at the top right of the map, opens th
 
 Which layers are available depends on the hazard and on the data loaded for your country. For floods the layers are described in [Flood layers explained](../hazards/floods/layers.md).
 
-!!! Note "Reading several layers together"
+!!! Note nrw-icon-layers "Reading several layers together"
     Exposed population and flood depth answer different questions, so they are often useful side by side. If a combination is hard to interpret, turn one off to isolate what you are looking at.
 
 -8<- "docs/en/_snippets/contact-support.md"

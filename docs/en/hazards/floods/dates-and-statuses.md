@@ -1,5 +1,6 @@
 ---
 title: Event Dates and Statuses
+icon: lucide/calendar-clock
 hide:
   - toc
 ---
@@ -15,10 +16,10 @@ An event carries several dates, and they answer different questions. This page e
 | **Peak** | In the river discharge graph | The day the forecast discharge is highest. It is usually later than the start date. |
 | **Last updated** | Bottom of the event card | When the forecast behind this event last refreshed. Use this to judge how current what you are looking at is. |
 
-!!! Warning "Start date and peak date are not the same"
+!!! Warning nrw-icon-calendar-range "Start date and peak date are not the same"
     The start date tells you when the situation becomes actionable by your threshold. The peak tells you when the river is expected to be at its highest. Plan against both: your lead time runs to the start date, your worst case runs to the peak.
 
-!!! Note "When the forecast crosses the threshold on several days"
+!!! Note nrw-icon-calendar-days "When the forecast crosses the threshold on several days"
     A forecast often stays above the threshold for more than one day of the 7 day window. The start date is the **first** crossing, not the worst one and not the last one. Use the return period lines on the [discharge graph](./discharge-graph.md) to see the full shape: which days cross which thresholds, and where the peak sits relative to the start.
 
 ### Statuses
@@ -31,7 +32,7 @@ The outlined label on the event card tells you where the event sits in time.
 | **Ongoing** | The event is happening now. |
 | **Ended** | The event is in the past. It stays visible for a period after it has happened so you can still use it while you plan and run a response. |
 
-!!! Important "Ended events are not shown in this pre-release"
+!!! Important nrw-icon-eye-off "Ended events are not shown in this pre-release"
     The **ended** status is designed but not yet built. In this pre-release, once an event is over it disappears from the events overview rather than appearing as ended. If an event you were following is no longer in the list, that is why. Note down what you need from an event before it passes.
 
 ### Why an event does not open and close repeatedly
